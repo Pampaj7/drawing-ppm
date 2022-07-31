@@ -1,0 +1,33 @@
+
+* {
+	margin:0;
+	padding: 0;
+}
+
+canvas {
+	/*border: 4px solid #ccc;*/
+	cursor:pointer;
+}
+
+.bottone {
+	width: 14px;
+	height: 14px;
+	border: 1px solid #000;
+	float: left;
+	margin-right: 2px;
+}
+
+#controls {margin-left:10px;}
+
+.clearer {clear: both;}
+
+#buttonGreen { background-color: green;}
+#buttonBlue { background-color: blue;}
+#buttonRed { background-color: red;}
+#buttonYellow { background-color: yellow;}
+#buttonBlack { background-color: black;}
+#buttonOrange { background-color: orange;}
+
+#buttonWhite { background-color: white;}
+#bottoneCancella { background-color: black; color: white; padding: 1px; width: 50px; font-size: 10px; text-align: center; height: 12px;}
+
