@@ -95,5 +95,6 @@ function disegna () {
     context.beginPath();
     context.moveTo(puntoInizioDisegnoX, puntoInizioDisegnoY);
     context.lineTo(posizioneCorrenteMouseX, posizioneCorrenteMouseY);
+    context.strokeStyle = coloreSelezionato;
 }
 
