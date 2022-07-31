@@ -94,5 +94,6 @@ function calcolaCoordinate(e) {
 function disegna () {
     context.beginPath();
     context.moveTo(puntoInizioDisegnoX, puntoInizioDisegnoY);
+    context.lineTo(posizioneCorrenteMouseX, posizioneCorrenteMouseY);
 }
 
