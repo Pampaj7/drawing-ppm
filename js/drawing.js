@@ -71,7 +71,7 @@ function calcolaCoordinate(e) {
             if (mouseIsDown) {
                 posizioneCorrenteMouseX = e.clientX - canvas.offsetLeft;
                 posizioneCorrenteMouseY = e.clientY - canvas.offsetTop;
-                //disegna();
+                disegna();
                 puntoInizioDisegnoX = posizioneCorrenteMouseX;
                 puntoInizioDisegnoY = posizioneCorrenteMouseY;
             }
@@ -91,10 +91,21 @@ function calcolaCoordinate(e) {
     }
 }
 
-function disegna () {
+function disegna() {
     context.beginPath();
     context.moveTo(puntoInizioDisegnoX, puntoInizioDisegnoY);
     context.lineTo(posizioneCorrenteMouseX, posizioneCorrenteMouseY);
     context.strokeStyle = coloreSelezionato;
+    context.lineWidth = LarghezzaLinea;
+    context.stroke();
+    context.closePath();
+
+}
+
+function cancella() {
+    var finestraConferma = confirm('Vuoi davvero cancellare?');
+    if (finestraConferma) {
+        context.clearRect(0, 0, canvas.width, canvas.heigth);
+    }
 }
 
